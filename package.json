@@ -1,0 +1,17 @@
+{
+  "name": "cheesein-backend",
+  "version": "1.0.0",
+  "description": "Backend of CheeseIn system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/icfkids/cheesein-backend.git"
+  },
+  "author": "Benjamin Falk <benjamin.falk@cyanjoe.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/icfkids/cheesein-backend#readme"
+}
