@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>CheeseIn Backend</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Routes</h1>
+    <pre id="routes">Nothing to see here!</pre>
+  </div>
+
+  <script>
+    var rawRoutes = '%routes%';
+    var routes = JSON.parse( rawRoutes );
+
+    document.getElementById( 'routes' ).textContent = JSON.stringify( routes, null, 2 );
+  </script>
+</body>
+</html>

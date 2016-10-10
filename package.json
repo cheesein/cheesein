@@ -13,5 +13,10 @@
   "author": "Benjamin Falk <benjamin.falk@cyanjoe.com>",
   "private": true,
   "license": "UNLICENSED",
-  "homepage": "https://bitbucket.org/icfkids/cheesein-backend#readme"
+  "homepage": "https://bitbucket.org/icfkids/cheesein-backend#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "moment": "^2.15.1"
+  }
 }
