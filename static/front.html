@@ -19,6 +19,25 @@
   <script>
     var rawRoutes = '%routes%';
 
+    function drawRouteEntries( routes, container ) {
+      for ( var key in routes ) {
+        console.log( route );
+        var route = routes[ key ];
+        var wrapper = document.createElement( 'div' );
+        var parts = {
+          method: document.createElement( 'span' ),
+          url: document.createElement( 'span' ),
+        };
+
+        parts.method.textContent = route.method;
+        parts.url.textContent = route.url;
+
+        wrapper.appendChild( parts.method );
+        wrapper.appendChild( parts.url );
+        container.appendChild( wrapper );
+      }
+    }
+
     function init( raw, container ) {
       var routes = {};
       try {
@@ -27,11 +46,12 @@
         container.innerHTML = 'Error parsing routes...<br><strong style="color: red;">' + err.toString() + '</strong>';
         return err;
       }
+
+      container.innerHTML = '';
+      drawRouteEntries( routes, container );
     }
 
     init( rawRoutes, document.getElementById( 'routes' ) );
-    //    document.getElementById( 'routes' ).textContent = JSON.stringify( routes, null, 2 );
-    init();
   </script>
 </body>
 </html>
