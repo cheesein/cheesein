@@ -6,6 +6,10 @@ module.exports = {
       res.send( { 'hello': 'world' } );
     } );
 
+    router.delete( '/:id', function( req, res ) {
+      res.send( { 'access': false } );
+    } );
+
   }
 
 };
