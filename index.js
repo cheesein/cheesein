@@ -16,7 +16,7 @@ app.get( '/', function( req, res ) {
     }
 
     let html = data.toString();
-    html = html.replace( '%routes%', JSON.stringify( Router.routes ).replace( '\'', '\\\'' ) );
+    html = html.replace( '%routes%', JSON.stringify( Router.routes ).replace( /'/g, '\\\'' ) );
 
     res.send( html );
   } );
