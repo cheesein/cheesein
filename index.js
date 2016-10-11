@@ -8,6 +8,7 @@ const colors = require( 'colors' );
 
 let app = express();
 let Router = require( 'Router' );
+let config = require( 'Config' );
 
 app.get( '/', function( req, res ) {
   fs.readFile( path.join( __dirname, 'static/front.html' ), function( err, data ) {
@@ -16,7 +17,9 @@ app.get( '/', function( req, res ) {
     }
 
     let html = data.toString();
-    html = html.replace( '%routes%', JSON.stringify( Router.routes ).replace( /'/g, '\\\'' ) );
+    html = html
+      .replace( '%routes%', JSON.stringify( Router.routes ).replace( /'/g, '\\\'' ) )
+      .replace( '%name%', config.name );
 
     res.send( html );
   } );
@@ -24,6 +27,6 @@ app.get( '/', function( req, res ) {
 
 Router.init( app, {} );
 
-app.listen( 3000, function() {
-  console.log( `Listening on localhost:3000` );
+app.listen( config.server.port, function() {
+  console.log( `Listening on localhost:${config.server.port}` );
 } );
