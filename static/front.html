@@ -11,7 +11,7 @@
 
     #routes {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
       flex-wrap: wrap;
     }
@@ -27,12 +27,13 @@
 
     .Route-body {
       background: #fff;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, .1) inset;
 
       margin: 0 .5rem;
       padding: 0 .5rem;
 
       max-height: 0;
-      opacity: 0;
+      opacity: .75;
       overflow: hidden;
       transition: all 1s ease;
     }
