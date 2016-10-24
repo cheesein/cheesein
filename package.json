@@ -12,8 +12,7 @@
     "url": "git+ssh://git@bitbucket.org/icfkids/cheesein-backend.git"
   },
   "author": "Benjamin Falk <benjamin.falk@cyanjoe.com>",
-  "private": true,
-  "license": "UNLICENSED",
+  "license": "GPL-3.0",
   "homepage": "https://bitbucket.org/icfkids/cheesein-backend#readme",
   "dependencies": {
     "colors": "^1.1.2",
