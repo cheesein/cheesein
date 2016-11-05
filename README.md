@@ -1,4 +1,8 @@
-CheeseIn ![CI](https://api.travis-ci.org/cheesein/cheesein.svg)
-========
+# cheeseIn
 
-Check-In system
+## Install components and start server
+
+```
+npm i
+npm start
+```
