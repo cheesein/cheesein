@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": 2
+  },
+  "comma-dangle": [
+    "error",
+    "always-multiline"
+  ]
+}
