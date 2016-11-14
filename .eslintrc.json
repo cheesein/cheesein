@@ -9,5 +9,8 @@
   "comma-dangle": [
     "error",
     "always-multiline"
-  ]
+  ],
+  "env": {
+    "es6": true
+  }
 }
