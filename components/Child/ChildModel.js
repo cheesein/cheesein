@@ -6,6 +6,6 @@ module.exports = {
   },
 
   create: function( data ) {
-    return { error: 'not implemented yet' }
+    return { error: 'not implemented yet' };
   }
 };
