@@ -4,7 +4,7 @@
   "description": "Backend of CheeseIn system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests yet\"; exit 0",
+    "test": "NODE_PATH=./lib mocha components/**/*.spec.js lib/**/*.spec.js",
     "start": "NODE_PATH=./lib node index.js"
   },
   "repository": {
@@ -14,13 +14,17 @@
   "author": "Benjamin Falk <benjamin.falk@cyanjoe.com>",
   "license": "GPL-3.0",
   "homepage": "https://bitbucket.org/icfkids/cheesein-backend#readme",
+  "jshintConfig": {
+    "node": true,
+    "esversion": 6
+  },
   "dependencies": {
     "colors": "^1.1.2",
     "express": "^4.14.0",
     "moment": "^2.15.1"
   },
-  "jshintConfig": {
-    "node": true,
-    "esversion": 6
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
