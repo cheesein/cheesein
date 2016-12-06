@@ -6,7 +6,7 @@
   "scripts": {
     "test": "NODE_PATH=./lib mocha components/**/*.spec.js lib/**/*.spec.js",
     "start": "NODE_PATH=./lib node index.js",
-    "start:dev": "NODE_PATH=./lib nodemon app"
+    "start:dev": "NODE_PATH=./lib nodemon index.js"
   },
   "repository": {
     "type": "git",
