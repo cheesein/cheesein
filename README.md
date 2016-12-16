@@ -11,6 +11,6 @@ mongod --config /usr/local/etc/mongod.conf
 ## Install components and start server
 
 ```
-npm i
-npm start
+yarn i
+yarn start
 ```
